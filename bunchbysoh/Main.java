@@ -46,8 +46,8 @@ public class Main {
         System.out.println("Number of Healthy Batteries: " + counts4.healthy);
         System.out.println("Number of Replace Batteries: " + counts4.replace);
         System.out.println("Number of Failed Batteries: " + counts4.failed);
-        
-       
+        System.out.println("All the test cases passesed :)\n");
+        System.out.println("All the counting is done:)\n");
     }
 
     public static void main(String[] args) {
