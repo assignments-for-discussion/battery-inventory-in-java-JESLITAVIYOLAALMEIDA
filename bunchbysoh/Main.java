@@ -16,7 +16,7 @@ public class Main {
             if (soh > 80) {
                 counts.healthy++;
             } 
-            else if (soh <= 80 && soh >63) {
+            else if (soh <= 80 && soh >=63) {
                     counts.exchange++;
             } 
             else {
