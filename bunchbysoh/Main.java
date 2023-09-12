@@ -31,7 +31,12 @@ public class Main {
         System.out.println("Number of Healthy Batteries: " + counts.healthy);
         System.out.println("Number of Replace Batteries: " + counts.replace);
         System.out.println("Number of Failed Batteries: " + counts.failed);
-
+        
+        int[] presentCapacities2 = {120, 120, 120, 120};
+        CountsBySoH counts2 = countBatteriesByHealth(presentCapacities2);
+        System.out.println("Number of Healthy Batteries: " + counts2.healthy);
+        System.out.println("Number of Replace Batteries: " + counts2.replace);
+        System.out.println("Number of Failed Batteries: " + counts2.failed);
         System.out.println("Done counting :)\n");
     }
 
