@@ -14,11 +14,14 @@ public class Main {
             double soh = (presentCapacity / (double) ratedCapacity) * 100;
             if (soh > 80) {
                 counts.healthy++;
-            } else if (soh >= 63) {
-                counts.exchange++;
-            } else {
-                counts.failed++;
-            }
+            } 
+            else if (soh <= 80 && soh >= 63) {
+                    counts.exchange++;
+            } 
+            else {
+            counts.failed++;
+        }
+
         }
     return counts;
   }
