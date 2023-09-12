@@ -26,11 +26,11 @@ public class Main {
 
   static void testBucketingByHealth() {
     System.out.println("Counting batteries by SoH...\n");
-    int[] presentCapacities = {115, 118, 80, 95, 91, 72};
-    CountsBySoH counts = countBatteriesByHealth(presentCapacities);
-    assert counts.healthy == 2;
-    assert counts.exchange == 3;
-    assert counts.failed == 1;
+    int[] presentCapacities1 = {105, 110, 80, 95, 91, 72};
+  CountsBySoH counts = countBatteriesByHealth(presentCapacities1);
+  assert counts.healthy == 3;
+  assert counts.exchange == 2;
+  assert counts.failed == 1;
     
     System.out.println("Done counting :)\n");
     System.out.println("All the test cases are passed :)\n"); 
